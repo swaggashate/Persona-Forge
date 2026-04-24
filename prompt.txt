@@ -1,0 +1,94 @@
+I want to build this react + javascript project. Generate code I can paste into files. Be clear where the code goes.
+
+🎭 Project: “PersonaForge” (Mock Social Profile Builder)
+
+🧠 Core Concept
+
+You create fully customizable fake social profiles—like characters, alternate identities, or just creative experiments.
+
+Nothing is posted online. Everything lives locally, like a sandbox.
+
+⚙️ Core Features (MVP – keep this tight)
+1. 👤 Profile Creator
+
+Inputs for:
+
+Username (@handle)
+Display Name
+Bio
+Profile Picture (image URL or upload)
+Background Banner (image or color)
+
+2. 🎵 Fake “Now Playing”
+Song Name
+Artist
+Optional album cover
+
+Displays like:
+
+🎧 Now Playing: Blinding Lights — The Weeknd
+
+3. 📸 Fake Posts
+Add posts with:
+Image (URL)
+Caption
+Render in a simple grid (like Instagram)
+
+4. 💾 Save Profiles (Local Only)
+Save profiles to localStorage
+Each profile has:
+{
+  id: "unique-id",
+  username: "alex13",
+  displayName: "Alex",
+  bio: "Building something big",
+  avatar: "url",
+  banner: "url",
+  song: { name: "", artist: "" },
+  posts: []
+}
+
+5. 📂 Profile Library
+View saved profiles
+Click to:
+👁 View
+✏️ Edit
+🗑 Delete
+
+🧱 Component Structure
+App
+ ├── ProfileList (saved profiles)
+ ├── ProfileEditor
+ │     ├── BasicInfoForm
+ │     ├── SongForm
+ │     └── PostManager
+ └── ProfilePreview
+
+🎨 UI Ideas (this is where it gets fun)
+Profile header like Instagram:
+Circular avatar
+Banner background
+Clean card layout for posts
+Subtle animations when switching profiles
+Toggle between:
+✏️ Edit Mode
+👁 Preview Mode
+
+🔥 Stretch Features (this can get crazy in a good way)
+🎭 1. Themes
+Dark mode, neon, vintage, hacker, etc.
+
+🧩 2. Layout Presets
+“Instagram-style”
+“Twitter-style”
+“Custom grid chaos mode”
+
+🎨 3. Advanced Customization
+Drag & resize profile elements
+Change fonts
+Custom colors for text/backgrounds
+
+💾 4. Export / Import
+Export profile as JSON
+Share with friends
+Re-import later
